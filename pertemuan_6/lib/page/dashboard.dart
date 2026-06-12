@@ -9,6 +9,7 @@ import 'package:pertemuan_6/pertemuan/pertemuan7.dart';
 import 'package:pertemuan_6/pertemuan/pertemuan8.dart';
 import 'package:pertemuan_6/pertemuan/pertemuan9.dart';
 import 'package:pertemuan_6/pertemuan/pertemuan10.dart';
+import 'package:pertemuan_6/pertemuan/pertemuan11.dart';
 
 class DashboardPage extends StatelessWidget {
   DashboardPage({super.key});
@@ -68,13 +69,19 @@ class DashboardPage extends StatelessWidget {
       "color": Colors.deepPurple,
       "page": Pertemuan9Page(),
     },
-       {
+    {
       "title": "Pertemuan 10",
-    "icon": Icons.star,
+      "icon": Icons.star,
       "color": Colors.deepPurple,
       "page": Pertemuan10Page(),
     },
-    
+    // PERTEMUAN 11 YANG BARU (Gaya Langsung)
+    {
+      "title": "Pertemuan 11",
+      "icon": Icons.menu_open,
+      "color": Colors.pink,
+      "page": const HomePage(), 
+    },
   ];
 
   @override
@@ -182,7 +189,6 @@ class DashboardPage extends StatelessWidget {
             ),
             child: Row(
               children: [
-
                 // ICON
                 Container(
                   padding: const EdgeInsets.all(14),
@@ -212,9 +218,7 @@ class DashboardPage extends StatelessWidget {
                           color: Colors.grey[800],
                         ),
                       ),
-
                       const SizedBox(height: 4),
-
                       Text(
                         "Buka halaman $title",
                         style: TextStyle(
