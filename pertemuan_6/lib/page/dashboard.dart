@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pertemuan_6/pertemuan/pertemuan1.dart';
+import 'package:pertemuan_6/pertemuan/pertemuan12.dart';
 import 'package:pertemuan_6/pertemuan/pertemuan2.dart';
 import 'package:pertemuan_6/pertemuan/pertemuan3.dart';
 import 'package:pertemuan_6/pertemuan/pertemuan4.dart';
@@ -10,6 +11,8 @@ import 'package:pertemuan_6/pertemuan/pertemuan8.dart';
 import 'package:pertemuan_6/pertemuan/pertemuan9.dart';
 import 'package:pertemuan_6/pertemuan/pertemuan10.dart';
 import 'package:pertemuan_6/pertemuan/pertemuan11.dart';
+import 'package:pertemuan_6/pertemuan/pertemuan12.dart';
+
 
 class DashboardPage extends StatelessWidget {
   DashboardPage({super.key});
@@ -82,6 +85,13 @@ class DashboardPage extends StatelessWidget {
       "color": Colors.pink,
       "page": const HomePage(), 
     },
+     {
+      "title": "Pertemuan 12",
+      "icon": Icons.menu_open,
+      "color": Colors.blue,
+      "page": const MapDirectionScreen(), 
+    },
+    
   ];
 
   @override
